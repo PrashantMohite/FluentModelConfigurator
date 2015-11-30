@@ -13,6 +13,10 @@ namespace FluentModelConfigurator
         {
             set { this.Type = InputType.date.ToString(); }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.DatePicker.ToString(); }
+        }
 
         private string MaxDate;
         private string MinDate;

@@ -10,6 +10,10 @@
         {
             set { this.Type =InputType.text.ToString(); }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.StringInput.ToString(); }
+        }
 
         private ushort MaxLength { get; set; }
         private int ValueRange { get; set; }

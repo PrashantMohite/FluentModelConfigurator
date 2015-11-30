@@ -17,6 +17,10 @@ namespace FluentModelConfigurator
         {
             set { this.Type = ""; }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.Slider.ToString(); }
+        }
 
         private List<int> ValueCollection;
 

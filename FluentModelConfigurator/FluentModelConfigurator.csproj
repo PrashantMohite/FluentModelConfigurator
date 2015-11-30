@@ -57,6 +57,7 @@
     <Compile Include="Core\InputBase.cs" />
     <Compile Include="Form.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ControlTypes.cs" />
     <Compile Include="Utils\InputType.cs" />
   </ItemGroup>
   <ItemGroup />

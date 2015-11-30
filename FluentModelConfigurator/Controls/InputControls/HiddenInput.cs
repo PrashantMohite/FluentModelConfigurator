@@ -11,6 +11,10 @@
         {
             set { this.Type = InputType.hidden.ToString(); }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.HiddenInput.ToString(); }
+        }
 
     }
 }

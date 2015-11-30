@@ -16,7 +16,10 @@ namespace FluentModelConfigurator
         {
             set { this.Type = ""; }
         }
-
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.ComboBox.ToString(); }
+        }
         private string Placeholder;
 
         public ComboBox WithPlaceHolder(string placeholder)

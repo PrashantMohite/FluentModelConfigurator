@@ -11,6 +11,10 @@
         {
             set { this.Type = InputType.email.ToString(); }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.Email.ToString(); }
+        }
 
         private ushort Length;
 

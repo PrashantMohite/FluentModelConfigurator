@@ -4,9 +4,9 @@ namespace FluentModelConfigurator
 {
     public abstract class InputBase
     {
-        public string Label { get; set; }
+        protected string Label { get; set; }
 
-        public string Name { get; set; }
+        protected string Name { get; set; }
 
         protected List<string> ValidationMessageList { get; set; }
     }
@@ -28,6 +28,18 @@ namespace FluentModelConfigurator
         public TEntity WithValidationMessageList(List<string> validationMessageList)
         {
             ValidationMessageList = validationMessageList;
+            return GetThis;
+        }
+
+        public TEntity WithLabel(string label)
+        {
+            Label = label;
+            return GetThis;
+        }
+
+        public TEntity WithName(string name)
+        {
+            Name = name;
             return GetThis;
         }
 

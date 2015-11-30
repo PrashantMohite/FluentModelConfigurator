@@ -12,6 +12,11 @@
             set { this.Type = InputType.number.ToString(); }
         }
 
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.NumericInput.ToString(); }
+        }
+
         private ushort MaxLength { get; set; }
         private int ValueRange { get; set; }
 

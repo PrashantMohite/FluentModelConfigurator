@@ -16,7 +16,10 @@ namespace FluentModelConfigurator
         {
             set { this.Type = ""; }
         }
-
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.MultiSelect.ToString(); }
+        }
         private string Placeholder;
 
         public MultiSelect WithPlaceHolder(string placeholder)

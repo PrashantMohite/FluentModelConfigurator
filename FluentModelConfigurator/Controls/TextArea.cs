@@ -17,6 +17,10 @@ namespace FluentModelConfigurator
         {
             set { this.Type =""; }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.TextArea.ToString(); }
+        }
 
         private ushort Rows;
         private ushort Columns;

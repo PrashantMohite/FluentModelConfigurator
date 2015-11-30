@@ -11,6 +11,10 @@
         {
             set { this.Type = InputType.range.ToString(); }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.RangeInput.ToString(); }
+        }
 
         private ushort MinVal;
         private ushort MaxVal;

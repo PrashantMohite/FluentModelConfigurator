@@ -13,7 +13,10 @@ namespace FluentModelConfigurator
         {
             set { this.Type = InputType.radio.ToString(); }
         }
-
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.RadioInput.ToString(); }
+        }
         public List<string> Values;
 
         public RadioInput WithValues(List<string> values)

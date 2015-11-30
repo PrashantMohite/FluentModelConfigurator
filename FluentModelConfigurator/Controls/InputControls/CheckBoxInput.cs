@@ -13,6 +13,11 @@ namespace FluentModelConfigurator
         {
             set { this.Type = InputType.checkbox.ToString(); }
         }
+
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.CheckBox.ToString(); }
+        }
         private List<string> Values;
 
         public CheckBoxInput WithValues(List<string> values)

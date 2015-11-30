@@ -16,5 +16,9 @@ namespace FluentModelConfigurator
         {
             set { this.Type = InputType.file.ToString(); }
         }
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.FileUpload.ToString(); }
+        }
     }
 }

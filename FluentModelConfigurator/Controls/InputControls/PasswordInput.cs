@@ -11,7 +11,10 @@
         {
             set { this.Type = InputType.password.ToString(); }
         }
-
+        private string ControlType
+        {
+            set { this.ControlType = ControlTypes.PassWordInput.ToString(); }
+        }
         private ushort MaxLength { get; set; }
         private int ValueRange { get; set; }
         private ushort MinLength { get; set; }
