@@ -2,22 +2,19 @@
 {
     public class EmailInput : Input<EmailInput>
     {
+        private string ControlType;
+
+        private ushort Length;
+        private string Type;
         protected override EmailInput GetThis
         {
             get { return this; }
         }
-
-        private string Type
+        public EmailInput()
         {
-            set { this.Type = InputType.email.ToString(); }
+            this.ControlType = ControlTypes.Email.ToString();
+            this.Type = InputType.email.ToString();
         }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.Email.ToString(); }
-        }
-
-        private ushort Length;
-
         public EmailInput WithMaxLength(ushort lenght)
         {
             Length = lenght;

@@ -7,16 +7,13 @@
             get { return this; }
         }
 
-        private string Type
+        private string Type;
+        private string ControlType;
+        public IntInput()
         {
-            set { this.Type = InputType.number.ToString(); }
+            this.Type = InputType.number.ToString();
+            this.ControlType = ControlTypes.NumericInput.ToString();
         }
-
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.NumericInput.ToString(); }
-        }
-
         private ushort MaxLength { get; set; }
         private int ValueRange { get; set; }
 

@@ -7,14 +7,16 @@
             get { return this; }
         }
 
-        private string Type
+        private string Type;
+
+        private string ControlType;
+        public PasswordInput()
         {
-            set { this.Type = InputType.password.ToString(); }
+            this.Type = InputType.password.ToString();
+            this.ControlType = ControlTypes.PassWordInput.ToString();
         }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.PassWordInput.ToString(); }
-        }
+
+
         private ushort MaxLength { get; set; }
         private int ValueRange { get; set; }
         private ushort MinLength { get; set; }

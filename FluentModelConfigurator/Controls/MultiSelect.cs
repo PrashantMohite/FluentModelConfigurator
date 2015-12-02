@@ -12,14 +12,17 @@ namespace FluentModelConfigurator
         {
             get { return this; }
         }
-        private string Type
+
+        private string Type;
+
+        private string ControlType;
+
+        public MultiSelect()
         {
-            set { this.Type = ""; }
+            this.Type = "";
+            this.ControlType = ControlTypes.MultiSelect.ToString();
         }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.MultiSelect.ToString(); }
-        }
+
         private string Placeholder;
 
         public MultiSelect WithPlaceHolder(string placeholder)

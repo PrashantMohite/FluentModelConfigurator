@@ -9,13 +9,13 @@ namespace FluentModelConfigurator
             get { return this; }
         }
 
-        private string Type
+        private string Type;
+        private string ControlType;
+
+        public DateInput()
         {
-            set { this.Type = InputType.date.ToString(); }
-        }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.DatePicker.ToString(); }
+            this.Type = InputType.date.ToString();
+            this.ControlType = ControlTypes.DatePicker.ToString();
         }
 
         private string MaxDate;

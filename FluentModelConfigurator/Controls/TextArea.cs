@@ -13,15 +13,16 @@ namespace FluentModelConfigurator
         {
             get { return this; }
         }
-        private string Type
-        {
-            set { this.Type =""; }
-        }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.TextArea.ToString(); }
-        }
 
+        private string Type;
+
+        private string ControlType;
+
+        public TextArea()
+        {
+            this.Type = "";
+            this.ControlType = ControlTypes.TextArea.ToString();
+        }
         private ushort Rows;
         private ushort Columns;
 

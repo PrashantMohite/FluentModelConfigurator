@@ -2,19 +2,19 @@
 {
     public class HiddenInput : Input<HiddenInput>
     {
+        private string Type;
+
+        private string ControlType;
+
         protected override HiddenInput GetThis
         {
             get { return this; }
         }
 
-        private string Type
+        public HiddenInput()
         {
-            set { this.Type = InputType.hidden.ToString(); }
+            this.Type = InputType.hidden.ToString();
+            this.ControlType = ControlTypes.HiddenInput.ToString();
         }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.HiddenInput.ToString(); }
-        }
-
     }
 }

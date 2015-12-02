@@ -13,13 +13,13 @@ namespace FluentModelConfigurator
             get { return this; }
         }
 
-        private string Type
+        private string Type;
+        private string ControlType;
+
+        public Slider()
         {
-            set { this.Type = ""; }
-        }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.Slider.ToString(); }
+            this.Type = "";
+            this.ControlType = ControlTypes.Slider.ToString();
         }
 
         private List<int> ValueCollection;

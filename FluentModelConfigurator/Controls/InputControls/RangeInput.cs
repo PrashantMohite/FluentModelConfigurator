@@ -7,13 +7,13 @@
             get { return this; }
         }
 
-        private string Type
+        private string Type;
+        private string ControlType;
+
+        public RangeInput()
         {
-            set { this.Type = InputType.range.ToString(); }
-        }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.RangeInput.ToString(); }
+            this.Type = InputType.range.ToString();
+            this.ControlType = ControlTypes.RangeInput.ToString();
         }
 
         private ushort MinVal;

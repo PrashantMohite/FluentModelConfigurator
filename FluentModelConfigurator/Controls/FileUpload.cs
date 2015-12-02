@@ -12,13 +12,15 @@ namespace FluentModelConfigurator
         {
             get { return this; }
         }
-        private string Type
+
+        private string Type;
+
+        private string ControlType;
+
+        public FileUpload()
         {
-            set { this.Type = InputType.file.ToString(); }
-        }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.FileUpload.ToString(); }
+            this.Type = InputType.file.ToString();
+            this.ControlType = ControlTypes.FileUpload.ToString();
         }
     }
 }

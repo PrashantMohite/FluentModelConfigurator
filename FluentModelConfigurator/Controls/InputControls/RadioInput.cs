@@ -4,20 +4,22 @@ namespace FluentModelConfigurator
 {
     public class RadioInput : Input<RadioInput>
     {
+
+        private string Type;
+
+        private string ControlType;
         protected override RadioInput GetThis
         {
             get { return this; }
         }
 
-        private string Type
+        public RadioInput()
         {
-            set { this.Type = InputType.radio.ToString(); }
+            this.Type = InputType.radio.ToString();
+            this.ControlType = ControlTypes.RadioInput.ToString();
         }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.RadioInput.ToString(); }
-        }
-        public List<string> Values;
+
+        private List<string> Values;
 
         public RadioInput WithValues(List<string> values)
         {

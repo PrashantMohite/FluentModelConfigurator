@@ -12,13 +12,15 @@ namespace FluentModelConfigurator
         {
             get { return this; }
         }
-        private string Type
+
+        private string Type;
+
+        private string ControlType;
+       
+        public ComboBox()
         {
-            set { this.Type = ""; }
-        }
-        private string ControlType
-        {
-            set { this.ControlType = ControlTypes.ComboBox.ToString(); }
+            this.Type = "";
+            this.ControlType = ControlTypes.ComboBox.ToString();
         }
         private string Placeholder;
 
